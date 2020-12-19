@@ -20,14 +20,16 @@ std::vector<double> experiment::DirectExperiment() {
     for (size_t j = 0; j < i / a; j += sixteen) {
       k = arr[j];
     }
-    system_clock::time_point start = system_clock::now();
+    std::chrono::system_clock::time_point start =
+        std::chrono::system_clock::now();
     for (size_t it = 0; it < hundred; ++it) {
       for (size_t j = 0; j < i / a; j += sixteen) {
         k = arr[j];
       }
     }
-    system_clock::time_point end = system_clock::now();
-    duration<double> duration = end - start;
+    std::chrono::system_clock::time_point end =
+        std::chrono::system_clock::now();
+    std::chrono::duration<double> duration = end - start;
     vectorDuration.push_back(duration.count());
   }
   delete[] arr;
@@ -41,14 +43,16 @@ std::vector<double> experiment::ReverseExperiment() {
     for (size_t j = 0; j < i / a; j -= sixteen) {
       k = arr[j - 1];
     }
-    system_clock::time_point start = system_clock::now();
+    std::chrono::system_clock::time_point start =
+        std::chrono::system_clock::now();
     for (size_t it = 0; it < hundred; ++it) {
       for (size_t j = 0; j < i / a; j -= sixteen) {
         k = arr[j - 1];
       }
     }
-    system_clock::time_point end = system_clock::now();
-    duration<double> duration = end - start;
+    std::chrono::system_clock::time_point end =
+        std::chrono::system_clock::now();
+    std::chrono::duration<double> duration = end - start;
     vectorDuration.push_back(duration.count());
   }
   delete[] arr;
@@ -68,22 +72,22 @@ std::vector<double> experiment::RandomExperiment() {
     std::mt19937 generator(rd());
     std::shuffle(randomVectorOfIndex.begin(), randomVectorOfIndex.end(),
                  generator);
-    system_clock::time_point start = system_clock::now();
+    std::chrono::system_clock::time_point start =
+        std::chrono::system_clock::now();
     for (size_t count = 0; count < hundred; ++count) {
       for (const auto& index : randomVectorOfIndex) {
         k = arr[index];
       }
     }
-    system_clock::time_point end = system_clock::now();
-    duration<double> duration = end - start;
+    std::chrono::system_clock::time_point end =
+        std::chrono::system_clock::now();
+    std::chrono::duration<double> duration = end - start;
     vectorDuration.push_back(duration.count());
   }
   delete[] arr;
   return vectorDuration;
 }
-size_t experiment::getCounter() {
-  return CountOfExperiments.size();
-}
+size_t experiment::getCounter() { return CountOfExperiments.size(); }
 std::ostream& operator<<(std::ostream& os, experiment& exp) {
   std::vector<std::string> Experiments = {"Direction", "Reverse", "Random"};
   os << " investigation" << std::endl;
