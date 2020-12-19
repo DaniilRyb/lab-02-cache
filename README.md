@@ -24,37 +24,37 @@ investigation
    input_data:
      buffer_size: 96 kb
    results:
-     direction: 8.78878 ms
+     direction: 3.72357 ms
    number 2
    input_data:
      buffer_size: 192 kb
    results:
-     direction: 8.11787 ms
+     direction: 7.70292 ms
    number 3
    input_data:
      buffer_size: 384 kb
    results:
-     direction: 22.9629 ms
+     direction: 15.4227 ms
    number 4
    input_data:
      buffer_size: 768 kb
    results:
-     direction: 44.0733 ms
+     direction: 49.9048 ms
    number 5
    input_data:
      buffer_size: 1536 kb
    results:
-     direction: 73.5001 ms
+     direction: 81.9549 ms
    number 6
    input_data:
      buffer_size: 3072 kb
    results:
-     direction: 169.898 ms
+     direction: 165.36 ms
    number 7
    input_data:
      buffer_size: 6144 kb
    results:
-     direction: 450.124 ms
+     direction: 348.981 ms
 
 
  investigation
@@ -65,37 +65,37 @@ investigation
    input_data:
      buffer_size: 96 kb
    results:
-     direction: 0.002535 ms
+     direction: 0.005735 ms
    number 2
    input_data:
      buffer_size: 192 kb
    results:
-     direction: 0.002484 ms
+     direction: 0.005584 ms
    number 3
    input_data:
      buffer_size: 384 kb
    results:
-     direction: 0.002455 ms
+     direction: 0.005654 ms
    number 4
    input_data:
      buffer_size: 768 kb
    results:
-     direction: 0.003586 ms
+     direction: 0.005584 ms
    number 5
    input_data:
      buffer_size: 1536 kb
    results:
-     direction: 0.003226 ms
+     direction: 0.005614 ms
    number 6
    input_data:
      buffer_size: 3072 kb
    results:
-     direction: 0.002475 ms
+     direction: 0.005594 ms
    number 7
    input_data:
      buffer_size: 6144 kb
    results:
-     direction: 0.002494 ms
+     direction: 0.005644 ms
 
 
  investigation
@@ -106,37 +106,37 @@ investigation
    input_data:
      buffer_size: 96 kb
    results:
-     direction: 24.9872 ms
+     direction: 25.5944 ms
    number 2
    input_data:
      buffer_size: 192 kb
    results:
-     direction: 61.4112 ms
+     direction: 43.7489 ms
    number 3
    input_data:
      buffer_size: 384 kb
    results:
-     direction: 141.612 ms
+     direction: 148.22 ms
    number 4
    input_data:
      buffer_size: 768 kb
    results:
-     direction: 318.609 ms
+     direction: 327.787 ms
    number 5
    input_data:
      buffer_size: 1536 kb
    results:
-     direction: 1052.44 ms
+     direction: 629.019 ms
    number 6
    input_data:
      buffer_size: 3072 kb
    results:
-     direction: 1197.95 ms
+     direction: 1367.51 ms
    number 7
    input_data:
      buffer_size: 6144 kb
    results:
-     direction: 3293.02 ms
+     direction: 2499.63 ms
 ```
- Общий график с результатами всех исследований:
- 
+ ### Общий график с результатами
+ ![Графики](https://yequalx.com/chart/column/kb%20(%D0%9A%D0%B1%D0%B0%D0%B9%D1%82),Direct%20experiment,Reverse%20experiment,Random%20experiment;96,3.72,20,25;192,7,20,43;384,15,10,148;768,49,30,327;1536,81,10,629;3072,165,20,1367;6144,349,10,2499#w:800;h:400;c:4285F4,db4437,f4b400)
