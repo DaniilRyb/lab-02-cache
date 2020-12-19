@@ -7,10 +7,9 @@
 #include <ostream>
 #include <random>
 #include <vector>
-using namespace std::chrono;
-#ifndef INCLUDE_HEADER_HPP_
-#define INCLUDE_HEADER_HPP_
-#endif  // INCLUDE_HEADER_HPP_
+#ifndef INCLUDE_EXPERIMENT_HPP_
+#define INCLUDE_EXPERIMENT_HPP_
+#endif  // INCLUDE_EXPERIMENT_HPP_
 const size_t oneKByte = 1024;
 const size_t cacheSize1 = 192, cacheSize2 = 1024, cacheSize3 = 4096;
 class experiment {
