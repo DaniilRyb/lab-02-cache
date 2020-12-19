@@ -2,7 +2,5 @@
 #include <gtest/gtest.h>
 #include <experiment.hpp>
 TEST(Example, EmptyTest) {
-  experiment exp;
-  std::cout << exp;
   EXPECT_TRUE(true);
 }
