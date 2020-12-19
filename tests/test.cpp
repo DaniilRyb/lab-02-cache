@@ -1,7 +1,8 @@
-// Copyright 2018 Your Name <your_email>
-
+// Copyright 2020 Daniil Rybakov <pochtaworld7@gmail.com>
 #include <gtest/gtest.h>
-
+#include <experiment.hpp>
 TEST(Example, EmptyTest) {
-    EXPECT_TRUE(true);
+  experiment exp;
+  std::cout << exp;
+  EXPECT_TRUE(true);
 }
